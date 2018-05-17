@@ -60,13 +60,13 @@
 			<!-- Navigation -->
 			<nav id="nav">
 				<ul class="main-nav nav navbar-nav navbar-right">
-					<li><%= link_to "Home", home_index_path %></li>
+					<!-- <li><%= link_to "Home", home_index_path %></li>
 					<li><%= link_to "About", home_about_path %></li>
 					<li><%= link_to "Calendar", home_calendar_path %></li>
-					<li><%= link_to "Media", home_media_path %></li>
+					<li><%= link_to "Media", home_media_path %></li> -->
 					<li><%= link_to "Schedule a Booking", home_bookings_path %></li>
-					<li><%= link_to "Contact", home_contact_path %></li>
-					<li><%= link_to "Blog", home_blog_path %></li>
+					<!-- <li><%= link_to "Contact", home_contact_path %></li>
+					<li><%= link_to "Blog", home_blog_path %></li> -->
 				</ul>
 			</nav>
 			<!-- /Navigation -->
@@ -88,7 +88,7 @@
 				<!-- row -->
 				<div class="row">
 					<!-- home content -->
-					<div class="col-md-8 col-md-offset-2">
+					<div>
 						<div class="home-content">
               <p>
                 <table>
@@ -96,34 +96,58 @@
                       <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
                       <!-- <input type='hidden' name='redirect_to' value='<the complete return url e.g. http://fooey.com/thank-you.html>' /> -->
                       <!-- all your input fields here.... -->
-                      <tr>
-                      	<td></td>
-                          <span> Name: <input type='text' name='name' /></span>
-                        <td></td>
-                      </tr>
-                      <tr>
-                      	<td></td>
-                          <div>
-                              City: <input type='text' name='city' />
-                          </div>
-                        <td></td>
-                      </tr>
-                      <div>
-                          State: <input type='text' name='state' />
-                      </div>
-                      <div>
-                          Address: <input type='text' name='address' />
-                      </div>
-                      <div>
-                          Phone: <input type='text' name='phone' />
-                      </div>
-                      <div>
-                          Date/time of event: <input type='text' name='dateTime' />
-                      </div>
-                      <div>
-                          Event type: <input type='text' name='type' />
-                      </div>
-                      <input type='submit' value='Submit' />
+											<div class="container">
+											 <div class="row">
+											  <div class="col-lg-2">
+											  </div>
+											  <div class="col-lg-3">
+													<p>
+													</p>
+														<h4 class="lead row"> Name:
+														</h4>
+
+														<h4 class="lead row"> <p>City:
+														</p>
+														</h4>
+													<p>
+														<h4 class="lead row">State:
+														</h4>
+													</p>
+													<p>
+														<h4 class="lead row">Address:
+														</h4>
+													</p>
+													<p>
+														<h4 class="lead row">
+															<p>Phone:</p>
+														</h4>
+													</p>
+													<p>
+														<h4 class="lead row">
+															<p>Date/time of event:
+															</p>
+														</h4>
+													</p>
+													<p>
+														<h4 class="lead row">Event type:
+														</h4>
+													</p>
+											  </div>
+
+											  <div class="col-lg-3">
+													<input class="lead row" type='text' name='name' />
+													<input class="lead row" type='text' name='city' />
+													<input class="lead row" type='text' name='state' />
+													<input class="lead row" type='text' name='address' />
+													<input class="lead row" type='text' name='phone' />
+													<input class="lead row" type='text' name='dateTime' />
+													<input class="lead row" type='text' name='type' />
+											  </div>
+											  <div class="col-lg-2">
+											  </div>
+											 </div>
+											 <input type='submit' value='Submit' />
+											</div>
                   </form>
                 </table>
               </p>
@@ -689,27 +713,7 @@
 			</div>
 			<!-- /row -->
 		</div>
-		<!-- /container -->
-
-		<!-- Map -->
-		<div id="map"></div>
-		<!-- /Map -->
-	</div>
-	<!-- /Contact -->
-
-	<!-- Footer -->
-	<footer id="footer">
-		<!-- container -->
-		<div class="container">
-			<!-- row -->
-			<div class="row">
-
-				<!-- footer logo -->
-				<div class="col-md-4 col-md-push-4">
-					<div class="footer-brand">
-						<a class="logo" href="index.html">
-							<img class="logo-img" src="../img/logo.png" alt="logo">
-						</a>
+		<!-- /container
 					</div>
 				</div>
 				<!-- /footer logo -->
@@ -730,7 +734,7 @@
 				<!-- copyright -->
 				<div class="col-md-4 col-md-pull-8">
 					<span class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Made with <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
 				</div>
 				<!-- /copyright -->
