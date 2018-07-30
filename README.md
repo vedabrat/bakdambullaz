@@ -1,24 +1,16 @@
 # README
+This app is the home directory for TassaTempah - a tassa drumming and practice crew in NJ  
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+git clone git@github.com:vedabrat/bakdambullaz.git
 
-* Ruby version
+cd bakdambullaz
 
-* System dependencies
+bundle install
 
-* Configuration
+rails s
 
-* Database creation
+the server will be running locally at localhost:3000
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO:
+Add a commenting/liking section.
